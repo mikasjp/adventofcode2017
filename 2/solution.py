@@ -15,10 +15,29 @@ input = """515	912	619	2043	96	93	2242	1385	2110	860	2255	621	1480	118	1230	99
 1112	1260	809	72	1104	156	104	1253	793	462	608	84	99	1174	449	929
 707	668	1778	1687	2073	1892	62	1139	908	78	1885	800	945	712	57	65"""
 
+# First part
+
 checksum = 0
 
 for line in input.split("\n"):
     row = list( map(int, line.split("\t")) )
     checksum += max(row) - min(row)
 
-print(checksum)
+print("Checksum: " + str(checksum))
+
+
+# Second part
+
+s = 0
+
+for line in input.split("\n"):
+    row = list( map(int, line.split("\t")) )
+    
+    i = 0
+    for i, a in enumerate(row):
+        j = 0
+        for j,b in enumerate(row):
+            if i!=j and a%b==0:
+                s += a/b
+
+print("Sum of divided numbers: "+ str(s))
