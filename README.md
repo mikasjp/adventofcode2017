@@ -5,7 +5,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 
 | Day     | Name                               | Python                 |
 |:-------:|:-----------------------------------|:----------------------:|
-| 01      | [Inverse Captcha][day1]            | :heavy_check_mark:     |
+| 01      | [Inverse Captcha][day01]            | :heavy_check_mark:     |
 | 02      | [Corruption Checksum][day02]       | :heavy_check_mark:     |
 
 [day01]: https://adventofcode.com/2017/day/1
