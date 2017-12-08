@@ -12,6 +12,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 05      | [A Maze of Twisty Trampolines, All Alike][day05]        | :heavy_check_mark:     |
 | 06      | [Memory Reallocation][day06]                            | :heavy_check_mark:     |
 | 07      | [Recursive Circus][day07]                               | :heavy_check_mark:     |
+| 08      | [I Heard You Like Registers][day08]                     | :heavy_check_mark:     |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -20,3 +21,4 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day05]: https://adventofcode.com/2017/day/5
 [day06]: https://adventofcode.com/2017/day/6
 [day07]: https://adventofcode.com/2017/day/7
+[day08]: https://adventofcode.com/2017/day/8
