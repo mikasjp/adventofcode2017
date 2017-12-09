@@ -13,6 +13,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 06      | [Memory Reallocation][day06]                            | :heavy_check_mark:     |
 | 07      | [Recursive Circus][day07]                               | :heavy_check_mark:     |
 | 08      | [I Heard You Like Registers][day08]                     | :heavy_check_mark:     |
+| 09      | [Stream Processing][day09]                              | :heavy_check_mark:     |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -22,3 +23,4 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day06]: https://adventofcode.com/2017/day/6
 [day07]: https://adventofcode.com/2017/day/7
 [day08]: https://adventofcode.com/2017/day/8
+[day09]: https://adventofcode.com/2017/day/9
