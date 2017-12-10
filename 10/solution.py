@@ -13,13 +13,17 @@ def ReverseRange(a,b,l):
 
 position = 0
 
+skip = 0
+
 def KnotHashRound():
     global position
     global lv
     global input
-    for skip,x in enumerate(input):
+    global skip
+    for i,x in enumerate(input):
         lv = ReverseRange(lv, position, x)
         position += x + skip
+        skip += 1
 
 # First part
 KnotHashRound()
@@ -35,19 +39,16 @@ def DenseHash(l):
     q = [("0" if x.__len__()==3 else "")+x.replace("0x","") for x in q]
     return "".join(q)
 
-lv = list(range(256))
 
-#li = list(map(str,input))
-#input = [ord(x) for x in ",".join(li)]
-
-#input = list(map(ord,"AoC 2017"))
-
-input = []
-
+li = list(map(str,input))
+input = [ord(x) for x in ",".join(li)]
 input.extend([17, 31, 73, 47, 23])
 
+lv = list(range(256))
 position = 0
+skip = 0
+
 for i in range(64):
     KnotHashRound()
 
-print(DenseHash(lv))
+print("Second part: " + DenseHash(lv))
