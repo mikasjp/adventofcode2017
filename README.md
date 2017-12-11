@@ -15,6 +15,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 08      | [I Heard You Like Registers][day08]                     | :heavy_check_mark:     |
 | 09      | [Stream Processing][day09]                              | :heavy_check_mark:     |
 | 10      | [Knot Hash][day10]                                      | :heavy_check_mark:     |
+| 11      | [Hex Ed][day11]                                         | :heavy_check_mark:     |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -26,3 +27,4 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day08]: https://adventofcode.com/2017/day/8
 [day09]: https://adventofcode.com/2017/day/9
 [day10]: https://adventofcode.com/2017/day/10
+[day11]: https://adventofcode.com/2017/day/11
