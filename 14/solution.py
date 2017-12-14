@@ -60,9 +60,38 @@ assert KnotHash("TEST") == "273d1ca62e42c54300605f37b66958c5"
 rows = []
 for i in range(128):
     r = KnotHash(input+"-"+str(i))
-    rows.append( (bin(int(r, 16))[2:]) ) 
+    b = (bin(int(r, 16))[2:])
+    rows.append( list( (128-b.__len__()) * "0" +  b) ) 
 
 # First part
 cnt = [x.count("1") for x in rows]
 print("First part: " + str(sum(cnt)))
 
+# Second part
+
+regions = 0
+
+def ClearRegion(y,x):
+    global rows
+    if rows[y][x]=="0":
+        return False
+    
+    rows[y][x] = "0"
+
+    if y>0:
+        ClearRegion(y-1, x)
+    if y<127:
+        ClearRegion(y+1, x)
+    if x>0:
+        ClearRegion(y, x-1)
+    if x<127:
+        ClearRegion(y, x+1)
+
+    return True
+
+for y in range(128):
+    for x in range(128):
+        if ClearRegion(y,x):
+            regions += 1
+
+print("Second part: " + str(regions))
