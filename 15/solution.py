@@ -1,8 +1,5 @@
 input = [int(x.split(" ")[4]) for x in open("data.txt", "r").read().split("\n")]
 
-def Binary(n):
-    return bin(n)[2:]
-
 A = 16807
 B = 48271
 
