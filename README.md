@@ -19,6 +19,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 12      | [Digital Plumber][day12]                                | :heavy_check_mark:     |
 | 13      | [Packet Scanners][day13]                                | :heavy_check_mark:     |
 | 14      | [Disk Defragmentation][day14]                           | :heavy_check_mark:     |
+| 15      | [Dueling Generators][day15]                             | :heavy_check_mark:     |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -34,3 +35,4 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day12]: https://adventofcode.com/2017/day/12
 [day13]: https://adventofcode.com/2017/day/13
 [day14]: https://adventofcode.com/2017/day/14
+[day15]: https://adventofcode.com/2017/day/15
