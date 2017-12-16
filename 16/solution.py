@@ -1,35 +1,55 @@
 input = [x for x in open("data.txt","r").read().split(",")]
 
-dancefloor = [chr(l) for l in range(97, 113)]
+dancefloor = []
 
-def DanceStep(x):
-    global dancefloor
+def InitDancefloor():
+    return [chr(l) for l in range(97, 113)]
+
+def DanceStep(x, df):
     if x[0]=="s":
         s = int(x[1:])
-        dancefloor = dancefloor[-s:] + dancefloor[0:-s]
+        df = df[-s:] + df[0:-s]
 
     if x[0]=="x":
         s = [int(z) for z in x[1:].split("/")]
-        tmp = dancefloor[s[0]]
-        dancefloor[s[0]] = dancefloor[s[1]]
-        dancefloor[s[1]] = tmp
+        tmp = df[s[0]]
+        df[s[0]] = df[s[1]]
+        df[s[1]] = tmp
 
     if x[0]=="p":
-        s = [dancefloor.index(z) for z in x[1:].split("/")]
-        tmp = dancefloor[s[0]]
-        dancefloor[s[0]] = dancefloor[s[1]]
-        dancefloor[s[1]] = tmp
+        s = [df.index(z) for z in x[1:].split("/")]
+        tmp = df[s[0]]
+        df[s[0]] = df[s[1]]
+        df[s[1]] = tmp
+    return df
 
-def Dance():
-    global input
-    for x in input:
-        DanceStep(x)
+def Dance(steps, df):
+    for x in steps:
+        df = DanceStep(x, df)
+    return df
 
-Dance()
+def DetectPeriod(steps):
+    df = InitDancefloor()
+    l = []
+    i = 0
+    df = Dance(steps, df)
+    while True:
+        df = Dance(steps, df)
+        if tuple(df) in l: break
+        l.append(tuple(df))
+        i += 1
+    return i
 
+dancefloor = InitDancefloor()
+
+#First part
+dancefloor = Dance(input, dancefloor)
 print("First part: " + "".join(dancefloor))
 
-for i in range((1000000000-1)%36):
-    Dance()
+# Second part
+MagicNumber = DetectPeriod(input)
+
+for i in range((1000000000-1) % MagicNumber):
+    dancefloor = Dance(input, dancefloor)
 
 print("Second part: " + "".join(dancefloor))
