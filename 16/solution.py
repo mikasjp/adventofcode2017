@@ -31,14 +31,14 @@ def Dance(steps, df):
 def DetectPeriod(steps):
     df = InitDancefloor()
     l = []
-    i = 0
+    #i = 0
     df = Dance(steps, df)
     while True:
         df = Dance(steps, df)
         if tuple(df) in l: break
         l.append(tuple(df))
-        i += 1
-    return i
+        #i += 1
+    return l.__len__()
 
 dancefloor = InitDancefloor()
 
