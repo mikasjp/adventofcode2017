@@ -21,7 +21,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 14      | [Disk Defragmentation][day14]                           | [:heavy_check_mark:][py14]     |                              |
 | 15      | [Dueling Generators][day15]                             | [:heavy_check_mark:][py15]     | [:heavy_check_mark:][c15]    |
 | 16      | [Permutation Promenade][day16]                          | [:heavy_check_mark:][py16]     |                              |
-| 16      | [Spinlock][day17]                                       | [:heavy_check_mark:][py17]     |                              |
+| 17      | [Spinlock][day17]                                       | [:heavy_check_mark:][py17]     |                              |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
