@@ -130,7 +130,7 @@ def ProgramStep(id):
             return False
 
     if ins[0] == "jgz":
-        if Value2(ins[1], id) != 0:
+        if Value2(ins[1], id) > 0:
             pointer[id] += Value2(ins[2], id)
         else:
             pointer[id] += 1
