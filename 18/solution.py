@@ -94,7 +94,6 @@ def ProgramStep(id):
     ins = input[pointer[id]].split(" ")
     
     if ins[0] == "snd":
-        print("Sending to: " + str(id-1))
         queue[id-1].append(Value2(ins[1], id))
         pointer[id] += 1
         counter[id] += 1
@@ -137,10 +136,8 @@ def ProgramStep(id):
         return True
 
 while True:
-    print("Running program 0")
     while ProgramStep(0):
         pass
-    print("Running program 1")
     while ProgramStep(1):
         pass
 

@@ -22,6 +22,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 15      | [Dueling Generators][day15]                             | [:heavy_check_mark:][py15]     | [:heavy_check_mark:][c15]    |
 | 16      | [Permutation Promenade][day16]                          | [:heavy_check_mark:][py16]     |                              |
 | 17      | [Spinlock][day17]                                       | [:heavy_check_mark:][py17]     |                              |
+| 18      | [Duet][day18]                                           | [:heavy_check_mark:][py18]     |                              |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -40,6 +41,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day15]: https://adventofcode.com/2017/day/15
 [day16]: https://adventofcode.com/2017/day/16
 [day17]: https://adventofcode.com/2017/day/17
+[day18]: https://adventofcode.com/2017/day/18
 
 [py01]: ./01/solution.py
 [py02]: ./02/solution.py
@@ -58,5 +60,6 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [py15]: ./15/solution.py
 [py16]: ./16/solution.py
 [py17]: ./17/solution.py
+[py18]: ./18/solution.py
 
 [c15]: ./15/solution.c 
