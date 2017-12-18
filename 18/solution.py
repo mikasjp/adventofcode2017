@@ -87,11 +87,17 @@ def ProgramStep(id):
     if pointer[id] >= input.__len__():
         return False
 
+    if pointer[id] < 0:
+        pointer[id] = input.__len__()
+        return False
+
     ins = input[pointer[id]].split(" ")
     
     if ins[0] == "snd":
+        print("Sending to: " + str(id-1))
         queue[id-1].append(Value2(ins[1], id))
         pointer[id] += 1
+        counter[id] += 1
         return True
 
     if ins[0] == "set":
@@ -119,7 +125,6 @@ def ProgramStep(id):
             reg[id][ins[1]] = queue[id][0]
             queue[id].pop(0)
             pointer[id] += 1
-            counter[id] += 1
             return True
         else:
             return False
@@ -138,7 +143,7 @@ while True:
     print("Running program 1")
     while ProgramStep(1):
         pass
-    print(queue)
-    if queue[0].__len__() == 0 and queue[1].__len__() == 0: break
 
+    if queue[0].__len__() == 0 and queue[1].__len__() == 0: break
+    if pointer[0] >= input.__len__() and pointer[1] >= input.__len__(): break
 print("Second part: " + str(counter[1]))
