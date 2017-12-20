@@ -35,7 +35,11 @@ def Collision(a, b):
 
     if roots.__len__()==0: return False
 
-    return min(roots)
+    disc = min(roots)
+    if disc.is_integer():
+        return disc
+    else:
+        return False
 
 c = {}
 
@@ -68,5 +72,7 @@ for ia,a in enumerate(input):
     for ib in range(ia+1, input.__len__()):
         if TrueCollision(ia, ib):
             counter += 2
+
+print(c)
 
 print("True collisions: " + str(counter))
