@@ -1,4 +1,5 @@
 import re
+import math
 
 input = [[int(s) for s in re.findall("[-\d]+", l)] for l in open("data.txt","r").read().split("\n")]
 
@@ -25,14 +26,47 @@ def Collision(a, b):
     dy = (2*(vy1 - vy2))**2 - 8 * (y1-y2) * (ay1 - ay2)
     dz = (2*(vz1 - vz2))**2 - 8 * (z1-z2) * (az1 - az2)
 
-    return dx>=0 and dy>=0 and dz>=0
+    col = dx>=0 and dy>=0 and dz>=0
 
+    if not col: return False
+    if ax1-ax2 == 0: return False
 
-c = []
+    roots = [x for x in [(vx1-vx2-math.sqrt(dx))/(2*(ax1-ax2)), (vx1-vx2+math.sqrt(dx))/(2*(ax1-ax2))] if x > 0]
+
+    if roots.__len__()==0: return False
+
+    return min(roots)
+
+c = {}
 
 for ia,a in enumerate(input):
     for ib in range(ia+1, input.__len__()):
-        if Collision(a, input[ib]):
-            c.extend([ia, ib])
+        col = Collision(a, input[ib])
+        if col:
+            if ia in c:
+                c[ia] = col if col<c[ia] else c[ia]
+            else:
+                c[ia] = col
 
-print("Colliding points: " + str(set(c).__len__()))
+            if ib in c:
+                c[ib] = col if col<c[ib] else c[ib]
+            else:
+                c[ib] = col
+
+def TrueCollision(ia, ib):
+    global input
+    global c
+
+    col = Collision(input[ia], input[ib])
+    if col:
+        return c[ia]>=col and c[ib]>=col
+    return False
+
+counter = 0
+
+for ia,a in enumerate(input):
+    for ib in range(ia+1, input.__len__()):
+        if TrueCollision(ia, ib):
+            counter += 2
+
+print("True collisions: " + str(counter))
