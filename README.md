@@ -24,6 +24,8 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 17      | [Spinlock][day17]                                       | [:heavy_check_mark:][py17]     |                              |
 | 18      | [Duet][day18]                                           | [:heavy_check_mark:][py18]     |                              |
 | 19      | [A Series of Tubes][day19]                              | [:heavy_check_mark:][py19]     |                              |
+| 20      | [Particle Swarm][day20]                                 | [:heavy_check_mark:][py20]     |                              |
+| 21      | [Fractal Art][day21]                                    | [:heavy_check_mark:][py21]     |                              |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -44,6 +46,8 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day17]: https://adventofcode.com/2017/day/17
 [day18]: https://adventofcode.com/2017/day/18
 [day19]: https://adventofcode.com/2017/day/19
+[day20]: https://adventofcode.com/2017/day/20
+[day21]: https://adventofcode.com/2017/day/21
 
 [py01]: ./01/solution.py
 [py02]: ./02/solution.py
@@ -64,5 +68,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [py17]: ./17/solution.py
 [py18]: ./18/solution.py
 [py19]: ./19/solution.py
+[py20]: ./20/solution.py
+[py21]: ./21/solution.py
 
 [c15]: ./15/solution.c 
