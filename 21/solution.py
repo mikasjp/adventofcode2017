@@ -79,3 +79,17 @@ for row in pattern:
     counter += row.count("#")
 
 print("First part: " + str(counter))
+
+
+# Second part
+
+pattern = [[".", "#", "."], [".", ".", "#"], ["#", "#", "#"]]
+
+for i in range(18):
+    pattern = ProcessGrid(pattern)
+
+counter = 0
+for row in pattern:
+    counter += row.count("#")
+
+print("Second part: " + str(counter))

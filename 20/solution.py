@@ -29,17 +29,18 @@ def Collision(a, b):
     col = dx>=0 and dy>=0 and dz>=0
 
     if not col: return False
-    if ax1-ax2 == 0: return False
-
-    roots = [x for x in [(vx1-vx2-math.sqrt(dx))/(2*(ax1-ax2)), (vx1-vx2+math.sqrt(dx))/(2*(ax1-ax2))] if x > 0]
+    if ax1-ax2 == 0:
+        if vx1-vx2 == 0:
+            return False
+        else:
+            roots = [x for x in [(x2-x1) / (2*vx1-2*vx2)] if x>=0 and x.is_integer()]
+    else:
+        roots = [x for x in [(vx1-vx2-math.sqrt(dx))/(2*(ax1-ax2)), (vx1-vx2+math.sqrt(dx))/(2*(ax1-ax2))] if x >= 0 and x.is_integer()]
 
     if roots.__len__()==0: return False
 
-    disc = min(roots)
-    if disc.is_integer():
-        return disc
-    else:
-        return False
+    return min(roots)
+    
 
 c = {}
 
@@ -73,6 +74,8 @@ for ia,a in enumerate(input):
         if TrueCollision(ia, ib):
             counter += 2
 
-print(c)
+print("Potential candidates: " + str(c.__len__()))
 
 print("True collisions: " + str(counter))
+
+assert 1000 - counter == 499
