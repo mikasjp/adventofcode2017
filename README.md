@@ -26,6 +26,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 19      | [A Series of Tubes][day19]                              | [:heavy_check_mark:][py19]     |                              |
 | 20      | [Particle Swarm][day20]                                 | [:heavy_check_mark:][py20]     |                              |
 | 21      | [Fractal Art][day21]                                    | [:heavy_check_mark:][py21]     |                              |
+| 22      | [Sporifica Virus][day22]                                | [:heavy_check_mark:][py22]     |                              |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -48,6 +49,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day19]: https://adventofcode.com/2017/day/19
 [day20]: https://adventofcode.com/2017/day/20
 [day21]: https://adventofcode.com/2017/day/21
+[day22]: https://adventofcode.com/2017/day/22
 
 [py01]: ./01/solution.py
 [py02]: ./02/solution.py
@@ -70,5 +72,6 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [py19]: ./19/solution.py
 [py20]: ./20/solution.py
 [py21]: ./21/solution.py
+[py22]: ./22/solution.py
 
 [c15]: ./15/solution.c 
