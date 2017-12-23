@@ -48,3 +48,28 @@ while i < input.__len__() and i >= 0:
             i += 1
 
 print("First part: " + str(counter))
+
+
+# Second part
+
+def isPrime(n):
+    ans = True
+    for i in range(2, n-1):
+        if n%i == 0:
+            ans = False
+            break
+    return ans
+
+h = 0
+b = 93
+c = b
+b = b * 100
+b = b + 100000
+c = b
+c = c + 17000
+
+for x in range(b, c+1, 17):
+    if not isPrime(x):
+        h = h + 1
+
+print("Second part: " + str(h))
