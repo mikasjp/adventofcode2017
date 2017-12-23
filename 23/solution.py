@@ -1,3 +1,5 @@
+import math
+
 input = [x for x in open("data.txt","r").read().split("\n")]
 
 def isInt(s):
@@ -54,7 +56,7 @@ print("First part: " + str(counter))
 
 def isPrime(n):
     ans = True
-    for i in range(2, n-1):
+    for i in range(2, int(math.sqrt(n))):
         if n%i == 0:
             ans = False
             break
