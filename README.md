@@ -28,6 +28,8 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 | 21      | [Fractal Art][day21]                                    | [:heavy_check_mark:][py21]     |                              |
 | 22      | [Sporifica Virus][day22]                                | [:heavy_check_mark:][py22]     |                              |
 | 23      | [Coprocessor Conflagration][day23]                      | [:heavy_check_mark:][py23]     |                              |
+| 24      | [Electromagnetic Moat][day24]                           | [:heavy_check_mark:][py24]     |                              |
+| 25      | [The Halting Problem][day25]                            | [:heavy_check_mark:][py25]     |                              |
 
 [day01]: https://adventofcode.com/2017/day/1
 [day02]: https://adventofcode.com/2017/day/2
@@ -52,6 +54,8 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [day21]: https://adventofcode.com/2017/day/21
 [day22]: https://adventofcode.com/2017/day/22
 [day23]: https://adventofcode.com/2017/day/23
+[day24]: https://adventofcode.com/2017/day/24
+[day25]: https://adventofcode.com/2017/day/25
 
 [py01]: ./01/solution.py
 [py02]: ./02/solution.py
@@ -76,5 +80,7 @@ Just for practice and fun. Thank You [Eric](http://was.tl/)!
 [py21]: ./21/solution.py
 [py22]: ./22/solution.py
 [py23]: ./23/solution.py
+[py24]: ./24/solution.py
+[py25]: ./25/solution.py
 
 [c15]: ./15/solution.c 
